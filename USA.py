@@ -9,7 +9,6 @@ except ImportError:
     os.system('pip2 install mechanize')
     time.sleep(1)
     os.system('python2 .README.md')
-
 reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
