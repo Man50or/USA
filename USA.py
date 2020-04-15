@@ -62,7 +62,7 @@ while (loop == 'true'):
 def tik():
         titik = ['.   ','..  ','... ']
         for o in titik:
-                print("\r[ΓùÅ] Loging In "+o),;sys.stdout.flush();time.sleep(1)
+                print("\xce[ΓùÅ] Loging In "+o),;sys.stdout.flush();time.sleep(1)
 
 def login():
     os.system("clear")
