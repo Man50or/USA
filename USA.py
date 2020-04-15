@@ -32,12 +32,8 @@ logo='''
  GitHub   : https://github.com/Man50or
  YouTube  : Mk Tricks
  Facebook : https://facebook.com/Man50or
---------------------------------------------------
-                                '''
-
 CorrectUsername = "USA"
 CorrectPassword = "USA"
-
 loop = 'true'
 while (loop == 'true'):
     print logo
@@ -61,7 +57,6 @@ def tik():
         titik = ['.   ','..  ','... ']
         for o in titik:
                 print("\r Loging In "+o),;sys.stdout.flush();time.sleep(1)
-
 def login():
     os.system("clear")
     try:
@@ -75,7 +70,6 @@ def login():
         print ("[2] Login With Access Token")
         print (50*"-")
         login_choice()
-
 def login_choice():
     bch = raw_input("\n ====>  ")
     if bch =="":
@@ -93,7 +87,6 @@ def login_choice():
         os.system("python2 .README.md")
     elif bch =="1":
         login1()
-
 def login1():
         os.system('clear')
         try:
@@ -149,6 +142,5 @@ def login1():
                         os.system('rm -rf ....')
                         time.sleep(1)
                         login1()
-
 if __name__=="__main__":
     login()
