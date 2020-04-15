@@ -18,24 +18,24 @@ br.addheaders = [('User-Agent', "Opera/9.80 (Android; Opera Mini/32.0.2254/85. U
 os.system("clear")
 ##### LOGO #####
 logo='''
-88888888ba  8b        d8  88
-88      '8b  Y8,    ,8P   88
-88      ,8P   `8b  d8'    88
-88_____-8P'     Y88P      88
-88------8b,     d88b      88
-88      `8b   ,8P  Y8,    88
-88      a8P  d8'    `8b   88
-88888888P'  8P        Y8  88
+888 8b       d8 88.  88      Y8
+88    '8b  Y8,  8P   88.    88
+88      ,8P     8b   d8'   88
+88              8P'  Y8  88
+88              8b,  d88b      
+88             `8b   8P  Y8,    
+88              d8'  8b   88
+88              88 8 8P'   8P8          
 --------------------------------------------------
- Auther   : Binyamin
- GitHub   : https://github.com/binyamin-binni
- YouTube  : Trick Proof
- Blogspot : https://trickproof.blogspot.com
+ Auther   : Mansoor Ali
+ GitHub   : https://github.com/Man50or
+ YouTube  : Mk Tricks
+ Blogspot : Not Yet 
 --------------------------------------------------
                                 '''
 
-CorrectUsername = "binyamin"
-CorrectPassword = "bxi"
+CorrectUsername = "USA"
+CorrectPassword = "USA"
 
 loop = 'true'
 while (loop == 'true'):
